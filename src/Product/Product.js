@@ -5,9 +5,10 @@ class Product extends React.Component{
         Product_Name:"RealmeC21Y(Black Gross,32GB)",
         Image:'https://rukminim1.flixcart.com/image/224/224/l1qrjbk0/mobile/d/w/h/-original-imagd8pyfk7wbdkg.jpeg?q=90',
         qty:1,
-        Price:"9,499"
-        
+        Price:9499
     }
+    
+
     incrHandler=()=>{
         this.setState({qty:this.state.qty + 1})
     }
@@ -18,7 +19,7 @@ class Product extends React.Component{
         return <div className='container'>
             <div className='row'>
                 <div className='col-md-8'>
-                    <table className='table-table-hover'>
+                    <table className='table-table-hover' border="1">
                         <thead>
                             <tr>
                                 <th>Product_Name</th>
@@ -31,11 +32,12 @@ class Product extends React.Component{
                             <tbody>
                                 <tr>
                                 <td>{this.state.Product_Name}</td>
-                                <td><img src={this.state.Image} alt="" height="60px"/></td>
+                                <td><img src={this.state.Image} alt=" "  /></td>
 
                                 <td>{this.state.Price}</td>
                                 <td><i className="fa fa-minus-circle" onClick={this.decrHandler}></i>{this.state.qty}<i className="fa fa-plus-circle" onClick={this.incrHandler}></i></td>
-                                <td>{this.state.Price *  this.state.qty}</td>
+                                <td>{this.state.Price * this.state.qty}</td>
+
 </tr>
 
                             </tbody>
@@ -45,7 +47,7 @@ class Product extends React.Component{
             </div>
         </div>
 
-
+    
     }
 }
 export default Product
