@@ -6,15 +6,15 @@ import React from 'react'
 //import Login from './state/Login'
 //import User from './Props/User'
 //import Navbar from './Navbar/Navbar'
-import Product from './Product/Product'
-
+//import Product from './Product/Product'
+import Product2 from './Product/Product2'
 const App = () => {
 
     return <>
         <h1>Hello Manasa</h1>
         <hr/>
         
-  <Product/>
+  <Product2/>
         
         
     </>

@@ -19,7 +19,7 @@ class Product extends React.Component{
         return <div className='container'>
             <div className='row'>
                 <div className='col-md-8'>
-                    <table className='table-table-hover' border="1">
+                    <table className='table-table-hover' border ="1">
                         <thead>
                             <tr>
                                 <th>Product_Name</th>
