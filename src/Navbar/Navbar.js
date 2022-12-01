@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React  from 'react'
 
-class Navbar extends Component {
+class Navbar extends React.Component {
     render() {
         return <nav className="navbar navbar-dark bg-dark">
             <a href="" className="navbar-brand">Props Example </a>
